@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #1c1c1c; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  overflow: auto;
+}
+
+/* Register Container */
+.register-container {
+  margin: 100px auto; /* Centered container */
+  padding: 40px 20px; /* Increased padding */
+  background-color: rgba(30, 30, 30, 0.9); /* Semi-transparent dark background */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title */
+.register-title {
+  color: #ffffff;
+  font-size: 36px; /* Increased font size */
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Input Fields */
+.register-field {
+  margin-bottom: 30px; /* Increased spacing */
+  font-size: 18px; /* Increased font size */
+  padding: 12px; /* Increased padding */
+  height: 56px; /* Set height to make fields larger */
+  background-color: rgba(255, 255, 255, 0.3); /* Lighter input background */
+  color: #ffffff; /* Text color for input fields */
+  border: 1px solid #444; /* Dark border color */
+  border-radius: 10px; /* Rounded corners */
+  transition: border 0.3s; /* Subtle transition effect */
+}
+
+.register-field:focus {
+  border: 1px solid #4caf50; /* Focus border color */
+}
+
+/* Buttons */
+.register-button {
+  margin-top: 20px;
+  background-color: #4caf50; /* Green background */
+  color: #ffffff;
+  border-radius: 10px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.register-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Alert Messages */
+.register-alert {
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

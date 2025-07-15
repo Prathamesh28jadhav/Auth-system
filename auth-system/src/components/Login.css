@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #1a1a1a, #2c3e50);
+  color: #ffffff;
+  overflow: auto;
+}
+
+/* Login Container */
+.login-container {
+  margin: 100px auto;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  animation: float 10s linear infinite;
+}
+
+/* Floating Background */
+.floating-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('path_to_your_background_pattern.png') repeat;
+  opacity: 0.1;
+  animation: float 10s linear infinite; /* Floating animation */
+  z-index: 0;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(15px, 15px); /* Change values for more/less float */
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 40px; /* Increased spacing */
+  color: #f5f5f5;
+  font-size: 36px; /* Increased font size */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Input Fields */
+.login-field {
+  margin-bottom: 30px; /* Increased spacing */
+  font-size: 20px; /* Increased font size */
+  padding: 10px; /* Increased padding for larger fields */
+  height: 56px; /* Set height to make fields larger */
+  background-color: rgba(255, 255, 255, 0.3); /* Light background for visibility */
+  color: #ffffff; /* Text color for input fields */
+  border: 1px solid #ffffff; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  transition: border 0.3s; /* Subtle transition effect */
+}
+
+.login-field:focus {
+  border: 1px solid #4caf50; /* Focus border color */
+}
+
+/* Buttons */
+.login-button {
+  margin-top: 20px;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.login-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.forgot-password-button {
+  margin-top: 10px;
+  color: #f52d2d;
+}
+
+/* Error Message */
+.login-error {
+  margin-top: 10px;
+  color: #f44336;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
